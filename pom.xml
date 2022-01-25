@@ -103,8 +103,8 @@
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>freestyle-job </name>
-	      <url>http://54.205.181.184:8081/repository/freestyle-job/</url>
+	      <name>vasu </name>
+	      <url>http://44.201.234.6:8081/repository/vasu/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
