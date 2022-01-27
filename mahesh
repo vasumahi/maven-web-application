@@ -1,0 +1,26 @@
+pipeline{
+    agent any
+    tools{
+        maven 'maven'
+    }
+    stages{
+        stage('SCM'){
+            steps{
+              git 'https://github.com/mahesh331/maven-web-application.git'
+            }
+            }
+            stage('BUILD'){
+            steps{
+             sh 'mvn package'
+            }
+            }
+             stage('DEPLOY'){
+            steps{
+            sshagent(['mahesh']) {
+            sh 'scp -o StrictHostKeyChecking=no target/*.war ec2-user@http://54.146.228.8/:/opt/tomcat/webapps/'
+    
+            }
+            }
+            }
+ }
+}
