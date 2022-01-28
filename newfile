@@ -13,6 +13,18 @@ stages{
      } 
      }
        stage(deploy){
+        input{
+message "hai"
+ok " branch selected"
+parameters{
+     choice(name:'Branch', choices:['dev','qa',],description: 'branch')
+ }
+ }
+ steps{
+     script{
+         echo "deploying to ${branch}"
+     }
+ }
        steps{
          echo 'deploy'
      } 
