@@ -12,8 +12,8 @@ stages{
          echo 'build'
      } 
      }
-       stage(deploy){
-        input{
+        stage(deploy){
+    input{
 message "hai"
 ok " branch selected"
 parameters{
@@ -25,10 +25,6 @@ parameters{
          echo "deploying to ${branch}"
      }
  }
-       steps{
-         echo 'deploy'
-     } 
-     }
 }
 }
-
+}
