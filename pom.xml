@@ -97,8 +97,8 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://18.119.0.218:8081/repository/webapp/</url>
+	      <name>webapp</name>
+	      <url>http://54.154.67.246:8081/repository/webapp/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
